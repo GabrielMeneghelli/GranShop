@@ -11,6 +11,8 @@ namespace GranShopAPI.Models
 
         [ForeignKey("Categoria")]
         public int CategoriaID { get; set; }
+        public Categoria Categoria { get; set; }
+
 
         [Required]
         [StringLength(100)]
